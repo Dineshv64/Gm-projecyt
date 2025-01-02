@@ -681,6 +681,7 @@ html {
 .client-right-box p {
     margin-top: 30px;
     font-style: italic;
+    overflow: hidden;
 
 }
 
