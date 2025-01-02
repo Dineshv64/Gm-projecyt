@@ -962,5 +962,15 @@ html {
     .playbutton {
         top: 40%;
     }
+     .join a {
+       
+        padding-left: 10px;
+        padding-right: 10px;
+    
+    }
+    .title h2 {
+
+    font-size: 20px;
+   }
 
 }
