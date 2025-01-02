@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexi Fit</title>
+
+    <link rel="shortcut icon" href="image/flexi Fit.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
+
+    <!--icon link-->
+    <!--fa-solid-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
+
+    <!--fa-brand-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/brands.min.css"
+        integrity="sha512-EJp8vMVhYl7tBFE2rgNGb//drnr1+6XKMvTyamMS34YwOEFohhWkGq13tPWnK0FbjSS6D8YoA3n3bZmb3KiUYA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!--fa-light-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/regular.min.css"
+        integrity="sha512-j+P0XpTXw+hDTK64xqC/cjv62cf629/IR4/0bokmich7J8XdVlWT40+1M/Z58rCQ4F+3QoJIfzh6Ui6TTIP6WQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rowdies:wght@300;400;700&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!--Navbar-->
+    <div class="block">
+        <nav class="navbar">
+            <h1>Flexi <span>FIT</span></h1>
+            <ul class="navbarlink">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="join"><a href="">Join Now</a></li>
+
+            </ul>
+
+            <div class="navmenu"><i class="fa-solid fa-bars" onclick="showbar()" style="color: aqua;"></i></div>
+
+        </nav>
+    </div>
+
+    <!--sidebar-->
+
+    <div class="sidebar-container">
+        <p style="text-align: right;">
+            <i class="fa-solid fa-xmark" onclick="closebar()"></i>
+        </p>
+        <nav class="sidebar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li class="join"><a href="">Join Now</a></li>
+            </ul>
+        </nav>
+
+    </div>
+
+    <!--video-container-->
+
+    <div class="cointainer" id="home">
+        <video loop muted autoplay class="videos">
+            <source src="image/gym3.mp4">
+        </video>
+        <div class="text">
+            <h1>Perfect Workout Coach <span> <br>For Body Shape</span></h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident nesciunt ex repudiandae earum atque
+                quasi corporis rerum quia expedita.</p>
+            <button class="buttons">
+                Learn more
+            </button>
+        </div>
+
+    </div>
+
+    <!--Booking-form-container-->
+
+    <div class="form-container">
+        <form>
+            <div class="input-container">
+                <div class="input-box">
+                    <i class="fa-solid fa-map-marker-alt"></i>
+                    <input type="text" placeholder="Choose Your Location">
+                </div>
+                <div class="input-box">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <input type="text" placeholder="Choose Visiting Date">
+                </div>
+            </div>
+            <div class="input-container">
+                <div class="input-box">
+                    <i class="fa-solid fa-dumbbell"></i>
+                    <input type="text" placeholder="Choose Your Gym">
+                </div>
+                <div class="input-box">
+                    <i class="fa-solid fa-user"></i>
+                    <input type="text" placeholder="Choose Your Coach">
+                </div>
+
+            </div>
+        </form>
+        <div class="button-1">
+            <button>Book Your Appoinment</button>
+        </div>
+    </div>
+
+    <!--Explore our program-container-->
+
+    <div class="title" id="services">
+        <h2>EXPLORE OUR PROGRAM</h2>
+        <div class="line">-------------------------</div>
+    </div>
+    <div class="card-4">
+
+        <div class="card" style="width: 18rem;"">
+            <img src=" image/cardio3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Cardio</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                <a href="#" class="btn btn-primary">Join Now <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="image/fit.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">BodyBuilding</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                <a href="#" class="btn btn-primary">Join Now <i class="fa-solid fa-arrow-right"></i> </a>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="image/yoga7.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Yoga</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                <a href="#" class="btn btn-primary">Join Now <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="image/fit2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Fitness</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                <a href="#" class="btn btn-primary">Join Now <i class="fa-solid fa-arrow-right"></i> </a>
+            </div>
+        </div>
+    </div>
+
+    <!--Banner-booknow-container-->
+
+    <div class="read-container" id="about">
+        <div class="img-container"><img src="image/about.png.png" class="backgrouni">
+
+            <div class="textside">
+                <h2>THE CLASS YOU WILL GET HERE</h2>
+                <p>Led by our team of expert and motivational instructors, "The Class You Will Get Here" is a
+                    high-energy, results-driven session that combines a perfect blend of cardio, strength training, and
+                    functional exercises. Each class is carefully curated to keep you engaged and challenged, ensuring
+                    you never hit a plateau in your fitness endeavors.</p>
+                <button>Book A Class</button>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+    <!--pricing-plan-container-->
+
+    <div class="price-plan">
+        <h2>PRICING PLAN</h2>
+        <div class="line">-------------------------</div>
+    </div>
+
+
+    <div class="price-container">
+        <div class="price-box">
+            <h3>Browns</h3>
+            <img src="image/fitness_.png" class="priceimg">
+            <div class="pricetext">
+                <p><i class="fa-solid fa-check "></i> Personal trainer</p>
+                <p><i class="fa-solid fa-check "></i> Service Locker</p>
+                <p><i class="fa-solid fa-check "></i> Room Fitness</p>
+                <p><i class="fa-solid fa-check "></i> Morning Slot Yoga</p>
+                <p><i class="fa-solid fa-check "></i> Classes Health</p>
+                <p><i class="fa-solid fa-check "></i> checkup</p>
+                <p><i class="fa-solid fa-dollar"> 25.99</i> <span>/month</span></p>
+                <button>Choose Plan</button>
+            </div>
+        </div>
+        <div class="price-box">
+            <h3>Silver</h3>
+            <img src="image/weight.png" class="priceimg">
+            <div class="pricetext">
+                <p><i class="fa-solid fa-check "></i> Personal trainer</p>
+                <p><i class="fa-solid fa-check "></i> Service Locker</p>
+                <p><i class="fa-solid fa-check "></i> Room Fitness</p>
+                <p><i class="fa-solid fa-check "></i> Morning Slot Yoga</p>
+                <p><i class="fa-solid fa-check "></i> Classes Health</p>
+                <p><i class="fa-solid fa-check "></i> checkup</p>
+                <p><i class="fa-solid fa-dollar"> 99.99</i> <span>/month</span></p>
+                <button>Choose Plan</button>
+            </div>
+        </div>
+        <div class="price-box">
+            <h3>Gold</h3>
+            <img src="image/fitness-bench.png" class="priceimg">
+            <div class="pricetext">
+                <p><i class="fa-solid fa-check "></i> Personal trainer</p>
+                <p><i class="fa-solid fa-check "></i> Service Locker</p>
+                <p><i class="fa-solid fa-check "></i> Room Fitness</p>
+                <p><i class="fa-solid fa-check "></i> Morning Slot Yoga</p>
+                <p><i class="fa-solid fa-check "></i> Classes Health</p>
+                <p><i class="fa-solid fa-check "></i> checkup</p>
+                <p><i class="fa-solid fa-dollar"> 149.99</i> <span>/month</span></p>
+                <button>Choose Plan</button>
+            </div>
+        </div>
+    </div>
+
+    <!--Fitness-videopaush-container-->
+
+    <div class="video-container">
+        <div class="videoss">
+            <div>
+                <h2>The Fitness You Will Enjoy With Our <span> Workout</span> </h2>
+                <p> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita accusamus porro ex officia est
+                    placeat, voluptas doloremque quaerat recusandae odit doloribus! Nesciunt repellat quo blanditiis
+                    distinctio maiores aperiam sapiente maxime, ea eum suscipit odio dolorum. Blanditiis consequuntur
+                    error dolores repellendus a atque obcaecati, ratione br . <br>Quisquam similique cupiditate omnis
+                    eveniet ullam sapiente dolores non rem doloribus hic at mollitia nesciunt provident sed, ipsa
+                    voluptatum. Laudantium ea iure voluptatum impedit repudiandae commodi asperiores et obcaecati
+                    sapiente, harum optio consectetur dolorum eius.
+                </p>
+                <div class="videoimg">
+                    <img src="image/istockphoto.jpg" alt="">
+                    <div class="playbutton">
+                        <i class="fa fa-play-circle"></i>
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <!--our-trainer-container-->
+
+    <div class="trainers">
+        <h2>OUR TRAINERS</h2>
+        <div class="line">-------------------------</div>
+    </div>
+
+    <div class="client-container">
+
+        <div class="client-left-box">
+            <img src="image/fitnesstraine1.jpg" alt="">
+        </div>
+        <div class="client-right-box">
+            <h3>Scarlet Jhonson</h3>
+            <h4>Cardio Trainer</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas magni voluptate odit eveniet
+                accusantium dolore.</p>
+        </div>
+
+
+    </div>
+
+
+
+    <div class="client-container">
+
+        <div class="client-left-box">
+            <img src="image/fitnesstraine2.jpg" alt="">
+        </div>
+        <div class="client-right-box">
+            <h3>Michael</h3>
+            <h4>BodyBuilder Trainer</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas magni voluptate odit eveniet
+                accusantium dolore.</p>
+        </div>
+
+
+    </div>
+    <div class="client-container">
+
+        <div class="client-left-box">
+            <img src="image/yoga1.jpg" alt="">
+        </div>
+        <div class="client-right-box">
+            <h3>Lousi carsol</h3>
+            <h4>Yoga Trainer</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas magni voluptate odit eveniet
+                accusantium dolore.</p>
+        </div>
+
+
+    </div>
+    <div class="client-container">
+
+        <div class="client-left-box">
+            <img src="image/trainer6.jpg" alt="">
+        </div>
+        <div class="client-right-box">
+            <h3>Daniel</h3>
+            <h4>Fitness Trainer</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas magni voluptate odit eveniet
+                accusantium dolore.</p>
+        </div>
+
+
+    </div>
+
+    <!--Latest-blog-conntainer-->
+
+    <div class="blog">
+        <h2>LATEST BLOGS</h2>
+        <div class="line">-------------------------</div>
+    </div>
+
+    <div class="card-3">
+
+        <div class="card" style="width: 18rem;">
+            <img src="image/reviews.jpg" class="card-img-top" alt="...">
+            <div class="date">Jan-7</div>
+            <div class="card-body-">
+                <h5 class="card-title">Going to the gym for the first time</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                <a href="#">Read More <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="image/review1.jpg" class="card-img-top" alt="...">
+            <div class="date">Feb-18</div>
+            <div class="card-body-">
+                <h5 class="card-title">All trainers are such a kindly person</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                <a href="#">Read More <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+
+        <div class="card" style="width: 18rem;">
+            <img src="image/review.jpg" class="card-img-top" alt="...">
+            <div class="date">Mar-11</div>
+            <div class="card-body-">
+                <h5 class="card-title">Good experience i got a day by day result</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                <a href="#">Read More <i class="fa-solid fa-arrow-right"></i></a>
+            </div>
+        </div>
+
+    </div>
+
+    <!--footer-newsletter-container-->
+
+    <div class="footer-container" id="contact">
+        <h2 class="news-text">Subscribe To Our Newsletter For Latest Updates</h2>
+        <div class="input-boxes">
+            <input type="text" placeholder="Enter Your Email">
+            <div class="click">Subscribe</div>
+        </div>
+
+        <div class="address-container">
+            <div class="ad-container2">
+                <div class="contact-1">
+                    <h1>Flexi <span>FIT</span></h1>
+                    <div class="ad-text" style="color: antiquewhite;"> <i class="fa-solid fa-phone"></i> +9123456789
+                    </div>
+                    <div class="ad-text" style="color: antiquewhite;"> <i class="fa-solid fa-envelope"></i>
+                        Flexifit@example.com </div>
+                </div>
+
+                <div class="contact-2">
+                    <div>
+                        <h2>Other Links</h2>
+                        <div class="line1"></div>
+                    </div>
+                    <div class="ad-text">
+                        <p>Home</p>
+                        <p>Abouts Us</p>
+                        <p>Services</p>
+                        <p>projects</p>
+                        <p>Our Team</p>
+                        <p>Latest Blog</p>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+            <div class="ad-container3">
+
+
+                <div class="contact-2">
+                    <div>
+                        <h2>Our Links</h2>
+                        <div class="line1"></div>
+                    </div>
+                    <div class="ad-text">
+                        <p>Partner</p>
+                        <p>Abouts Us</p>
+                        <p>career</p>
+                        <p>Reviews</p>
+                        <p>Terms & Condition</p>
+                        <p>Help</p>
+                    </div>
+
+                </div>
+
+
+
+                <div class="contact-2">
+
+                    <div class="ad-text">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, fugit, rem odio numquam
+                            perspiciatis veniam doloremque consequuntur odit quam quo sequi ut repudiandae labore sit
+                            distinctio. Iste cum, amet deleniti culpa
+                            iusto nobis provident atque earum ullam voluptatem dignissimos incidunt quis tempora
+                            doloribus id perferendis necessitatibus corporis accusantium. Quas, expedita!</p>
+                        <div class="socialmedia-logo">
+                            <i class="fa-brands fa-whatsapp"></i>
+                            <i class="fa-brands fa-facebook"></i>
+                            <i class="fa-brands fa-x"></i>
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+
+
+
+
+
+
+        </div>
+    </div>
+
+   <!--copyrights-->
+
+    <div class="designer">
+        <p><i class="fa-solid fa-copyright"></i> Dinesh FlexiFit.</p>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
