@@ -7,5 +7,5 @@ function showbar(){
     sidenavbar.style.left="0%"
 }
 function closebar(){
-    sidenavbar.style.left="-60%"
+    sidenavbar.style.left="-80%"
 }
